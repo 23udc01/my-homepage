@@ -273,6 +273,8 @@ section {
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card.visible {
@@ -290,10 +292,25 @@ section {
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .service-card:hover i {
     transform: scale(1.1) rotate(5deg);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.05);
 }
 
 /* 施工事例 */
@@ -341,8 +358,26 @@ section {
 }
 
 .work-card p {
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 1.5rem 1rem;
     color: #666;
+}
+
+.work-details {
+    padding: 0 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.work-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.work-details i {
+    color: var(--secondary-color);
 }
 
 /* お問い合わせ */
@@ -510,5 +545,14 @@ section {
 
     .works-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-details {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
