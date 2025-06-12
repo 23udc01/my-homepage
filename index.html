@@ -3,36 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私のホームページ</title>
+    <title>有限会社小安商店 - 内装工事・リフォームのプロフェッショナル</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">ようこそ！</h1>
-            <p class="subtitle">私のポートフォリオへ</p>
-        </header>
-        
-        <main class="main-content">
-            <section class="about-section">
-                <h2>About Me</h2>
-                <p>これはCloudflare Pagesで公開されるGitHubリポジトリのホームページです。</p>
-            </section>
-            
-            <section class="skills-section">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">Web Development</div>
-                    <div class="skill-card">Design</div>
-                    <div class="skill-card">Programming</div>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>小安商店</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">会社概要</a></li>
+                <li><a href="#services">事業内容</a></li>
+                <li><a href="#works">施工事例</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>内装工事・リフォームの<br>プロフェッショナル</h2>
+                <p>安心価格・高品質の施工で、あなたの理想の空間を実現します</p>
+                <a href="#contact" class="cta-button">無料見積もりを依頼する</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">会社概要</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>有限会社小安商店</h3>
+                        <p>〒113-0034 東京都文京区湯島１丁目１２－５</p>
+                        <p>Tel: 03-3834-2756</p>
+                        <p>営業時間: 9:00～18:00</p>
+                        <p>休業日: 日曜日、祝日（電話対応・予約は受付します）</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>安心価格・高品質</h4>
+                            <p>自社設計施工で品質を保証</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-comments"></i>
+                            <h4>徹底した打合せ</h4>
+                            <p>納得いくまでご相談を承ります</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tools"></i>
+                            <h4>アフターメンテナンス</h4>
+                            <p>きめ細かなサービスを提供</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        
-        <footer class="footer">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-        </footer>
-    </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">事業内容</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-home"></i>
+                        <h3>住宅リフォーム</h3>
+                        <p>マンション・アパート・戸建住宅の内装工事</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-building"></i>
+                        <h3>商業施設</h3>
+                        <p>店舗・オフィスの内装工事・改装工事</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-hospital"></i>
+                        <h3>医療・介護施設</h3>
+                        <p>病院・クリニック・介護施設の内装工事</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-paint-roller"></i>
+                        <h3>内装工事</h3>
+                        <p>壁紙・床材・天井材の施工</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works-section">
+            <div class="container">
+                <h2 class="section-title">施工事例</h2>
+                <div class="works-grid">
+                    <div class="work-card">
+                        <img src="https://via.placeholder.com/400x300" alt="施工事例1">
+                        <h3>マンションリフォーム</h3>
+                        <p>東京都文京区</p>
+                    </div>
+                    <div class="work-card">
+                        <img src="https://via.placeholder.com/400x300" alt="施工事例2">
+                        <h3>店舗内装工事</h3>
+                        <p>東京都新宿区</p>
+                    </div>
+                    <div class="work-card">
+                        <img src="https://via.placeholder.com/400x300" alt="施工事例3">
+                        <h3>オフィス改装</h3>
+                        <p>東京都千代田区</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>お気軽にご相談ください</h3>
+                        <p>無料見積もり・ご相談を承っております</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-phone"></i> 03-3834-2756</p>
+                            <p><i class="fas fa-envelope"></i> info@koyasu-shouten.com</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="お名前" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="メールアドレス" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="電話番号" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="お問い合わせ内容" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>有限会社小安商店</h3>
+                    <p>〒113-0034 東京都文京区湯島１丁目１２－５</p>
+                    <p>Tel: 03-3834-2756</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#services">事業内容</a></li>
+                        <li><a href="#works">施工事例</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 有限会社小安商店 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
